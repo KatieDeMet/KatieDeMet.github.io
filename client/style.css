@@ -1,3 +1,45 @@
+body {
+    background-image: url("assets/matrixBG2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContent {
+    background-color: #000;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 h1 {
-    color: blue;
+    font-family: Orbitron, monospace;
+    font-size: 24px;
+    color: green;
+    align-self: flex-start;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#redPill {
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#bluePill {
+    background-color: blue;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px;
 }
