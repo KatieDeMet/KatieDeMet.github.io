@@ -46,7 +46,7 @@ const displayProjects = () => {
 
     let projectImg1 = document.createElement('img')
     projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
-    projectDiv1.appendChild('projectImg1')
+    projectDiv1.appendChild(projectImg1)
 
     let githubLink1 = document.createElement('a')
     githubLink1.href = "https://github.com/KatieDeMet/imameme"
