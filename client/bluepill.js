@@ -38,7 +38,7 @@ const displayProjects = () => {
     let title1 = document.createElement('h3')
     title1.classList.add('projectTitle')
     title1.innerHTML = "I'm A Meme"
-    projectDiv.appendChild(title1)
+    projectDiv1.appendChild(title1)
 
     let projectImgDiv = document.createElement('div')
     projectImgDiv.classList.add('projectImgDiv')
