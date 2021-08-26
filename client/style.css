@@ -1,7 +1,15 @@
+html { 
+    background: url("assets/matrixBG.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body {
-    background-image: url("assets/matrixBG2.jpg");
+    /* background-image: url("assets/matrixBG2.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     display: flex;
     justify-content: center;
 }
@@ -20,7 +28,6 @@ h1 {
     font-family: Orbitron, monospace;
     font-size: 24px;
     color: green;
-    align-self: flex-start;
 }
 
 #buttonContainer {
@@ -28,18 +35,11 @@ h1 {
     flex-direction: row;
 }
 
+
 #redPill {
-    background-color: red;
-    width: 70px;
-    height: 30px;
-    border-radius: 30px;
-    padding: 10px;
+    width: 20vw;
 }
 
 #bluePill {
-    background-color: blue;
-    width: 70px;
-    height: 30px;
-    border-radius: 30px;
-    padding: 10px;
+    width: 20vw;
 }
