@@ -34,7 +34,6 @@ const displayProjects = () => {
 
     let projectDiv1 = document.createElement('div')
     projectDiv1.classList.add('projectDiv')
-    displayContainer.appendChild(projectDiv1)
 
     let title1 = document.createElement('h3')
     title1.classList.add('projectTitle')
@@ -68,7 +67,7 @@ const displayProjects = () => {
     // displayGithubLinks([, "https://github.com/KatieDeMet/simulation-vanillajs"])
     // displayLiveLinks([, "https://budgetbuilderkatie.herokuapp.com/"])
 
-    
+    displayContainer.appendChild(projectDiv1)
     
 }
 
