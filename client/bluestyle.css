@@ -101,10 +101,14 @@ a {
     margin: 10px;
 }
 
-.projectDisplayContainer {
-    width: 85vw;
+.projectTitle {
+    color: #0096FF;
 }
 
-.projectHeader {
-    color: #0096FF;
+.projectDiv {
+    width: 40vw;
+}
+
+.projectImgDiv img {
+    width: 50%
 }

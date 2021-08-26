@@ -40,14 +40,15 @@ const displayProjects = () => {
     title1.innerHTML = "I'm A Meme"
     projectDiv1.appendChild(title1)
 
-    // let projectImgDiv = document.createElement('div')
-    // projectImgDiv.classList.add('projectImgDiv')
-    // projectDiv1.appendChild(projectImgDiv)
+    let projectImgDiv1 = document.createElement('div')
+    projectImgDiv1.classList.add('projectImgDiv')
+    projectDiv1.appendChild(projectImgDiv1)
 
     let projectImg1 = document.createElement('img')
     projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
-    projectDiv1.appendChild(projectImg1)
+    projectImgDiv1.appendChild(projectImg1)
 
+    let projectLinkDiv1 = document.createElement('div')
     let githubLink1 = document.createElement('a')
     githubLink1.href = "https://github.com/KatieDeMet/imameme"
     githubLink1.innerHTML = "Github"
@@ -58,9 +59,10 @@ const displayProjects = () => {
     liveLink1.href = "https://imameme.herokuapp.com/"
     liveLink1.innerHTML = "Live Site"
 
-    projectDiv1.appendChild(githubLink1)
-    projectDiv1.appendChild(demoLink1)
-    projectDiv1.appendChild(liveLink1)
+    projectLinkDiv1.appendChild(githubLink1)
+    projectLinkDiv1.appendChild(demoLink1)
+    projectLinkDiv1.appendChild(liveLink1)
+    projectImgDiv1.appendChild(projectLinkDiv1)
     
     // displayHeaders([, "Budget Builder"])
     // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
@@ -70,15 +72,6 @@ const displayProjects = () => {
     displayContainer.appendChild(projectDiv1)
     
 }
-
-// const displayHeaders = (headerArr) => {
-//     headerArr.forEach(header => {
-//         let headerEle = document.createElement("h3")
-//         headerEle.classList.add("projectHeader")
-//         headerEle.innerHTML = header
-//         displayContainer.appendChild(headerEle)
-//     })
-// }
 
 // const displayImages = (imgArr) => {
 //     imgArr.forEach(image => {
