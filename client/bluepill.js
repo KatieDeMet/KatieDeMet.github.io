@@ -52,14 +52,21 @@ const displayProjects = () => {
     githubLink1.href = "https://github.com/KatieDeMet/imameme"
     githubLink1.innerHTML = "Github"
     let demoLink1 = document.createElement('a')
+    demoLink1.href = "https://youtu.be/UPFSfziItqk "
+    demoLink1.innerHTML = "Demo"
     let liveLink1 = document.createElement('a')
+    liveLink1.href = "https://imameme.herokuapp.com/"
+    liveLink1.innerHTML = "Live Site"
 
+    projectImgDiv.appendChild(githubLink1)
+    projectImgDiv.appendChild(demoLink1)
+    projectImgDiv.appendChild(liveLink1)
     projectDiv1.appendChild(projectImgDiv)
     
-    // displayHeaders(["I'm A Meme", "Budget Builder"])
+    // displayHeaders([, "Budget Builder"])
     // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
     // displayGithubLinks([, "https://github.com/KatieDeMet/simulation-vanillajs"])
-    // displayLiveLinks(["https://imameme.herokuapp.com/", "https://budgetbuilderkatie.herokuapp.com/"])
+    // displayLiveLinks([, "https://budgetbuilderkatie.herokuapp.com/"])
 
     displayContainer.appendChild(projectDiv1)
     
