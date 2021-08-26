@@ -46,6 +46,7 @@ const displayProjects = () => {
 
     let projectImg1 = document.createElement('img')
     projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
+    projectImg1.width = 300
     projectImgDiv1.appendChild(projectImg1)
 
     let projectLinkDiv1 = document.createElement('div')
@@ -72,28 +73,6 @@ const displayProjects = () => {
     displayContainer.appendChild(projectDiv1)
     
 }
-
-// const displayImages = (imgArr) => {
-//     imgArr.forEach(image => {
-//         let imgDiv = document.createElement('div')
-//         imgDiv.classList.add("projectDisplayContainer")
-//         let projectImg = document.createElement('img')
-//         projectImg.src = image
-//         projectImg.width = 300
-//         projectImg.classList.add('projectPhoto')
-//         imgDiv.appendChild(projectImg)
-//         displayContainer.appendChild(imgDiv)
-//     });
-// }
-
-
-// const displayGithubLinks = (gitLinksArr) => {
-
-// }
-
-// const displayLiveLinks = (liveLinksArr) => {
-
-// }
 
 langButton.addEventListener('click', displayText)
 devButton.addEventListener('click', displayText)
