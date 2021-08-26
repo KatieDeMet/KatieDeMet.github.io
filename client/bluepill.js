@@ -72,7 +72,7 @@ const displayProjects = () => {
 
     let title2 = document.createElement('h3')
     title2.innerHTML = "Budget Builder"
-    title1.setAttribute("class", "projectTitle")
+    title2.setAttribute("class", "projectTitle")
     projectDiv2.appendChild(title2)
 
     let projectImgDiv2 = document.createElement('div')
