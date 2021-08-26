@@ -81,7 +81,7 @@ const displayProjects = () => {
 
     let projectImg2 = document.createElement('img')
     projectImg2.src = "client/assets/budgetBuilderDemoPhoto.jpg"
-    projectImg1.width = 300
+    projectImg2.width = 300
     projectImgDiv2.appendChild(projectImg2)
 
     let projectLinkDiv2 = document.createElement('div')
