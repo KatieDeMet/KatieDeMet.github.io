@@ -31,13 +31,37 @@ const displayText = (event) => {
 
 const displayProjects = () => {
     displayContainer.innerHTML = ``
+
+    let projectDiv1 = document.createElement('div')
+    projectDiv1.classList.add('projectDiv')
+
+    let title1 = document.createElement('h3')
+    title1.classList.add('projectTitle')
+    title1.innerHTML = "I'm A Meme"
+    projectDiv.appendChild(title1)
+
+    let projectImgDiv = document.createElement('div')
+    projectImgDiv.classList.add('projectImgDiv')
+    let projectImg1 = document.createElement('img')
+    projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
+    projectImgDiv.appendChild('projectImg1')
+
+    let projectLinksDiv = document.createElement('div')
+    projectLinksDiv.classList.add('projectLinksDiv')
+    let githubLink1 = document.createElement('a')
+    githubLink1.href = "https://github.com/KatieDeMet/imameme"
+    githubLink1.innerHTML = "Github"
+    let demoLink1 = document.createElement('a')
+    let liveLink1 = document.createElement('a')
+
+    projectDiv1.appendChild(projectImgDiv)
     
     // displayHeaders(["I'm A Meme", "Budget Builder"])
-    displayImages(["client/assets/imamemeDemoPhoto.jpg", "client/assets/budgetBuilderDemoPhoto.jpg"])
-    // displayGithubLinks(["https://github.com/KatieDeMet/imameme", "https://github.com/KatieDeMet/simulation-vanillajs"])
+    // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
+    // displayGithubLinks([, "https://github.com/KatieDeMet/simulation-vanillajs"])
     // displayLiveLinks(["https://imameme.herokuapp.com/", "https://budgetbuilderkatie.herokuapp.com/"])
 
-    
+    displayContainer.appendChild(projectDiv1)
     
 }
 
@@ -50,18 +74,18 @@ const displayProjects = () => {
 //     })
 // }
 
-const displayImages = (imgArr) => {
-    imgArr.forEach(image => {
-        let imgDiv = document.createElement('div')
-        imgDiv.classList.add("projectDisplayContainer")
-        let projectImg = document.createElement('img')
-        projectImg.src = image
-        projectImg.width = 300
-        projectImg.classList.add('projectPhoto')
-        imgDiv.appendChild(projectImg)
-        displayContainer.appendChild(imgDiv)
-    });
-}
+// const displayImages = (imgArr) => {
+//     imgArr.forEach(image => {
+//         let imgDiv = document.createElement('div')
+//         imgDiv.classList.add("projectDisplayContainer")
+//         let projectImg = document.createElement('img')
+//         projectImg.src = image
+//         projectImg.width = 300
+//         projectImg.classList.add('projectPhoto')
+//         imgDiv.appendChild(projectImg)
+//         displayContainer.appendChild(imgDiv)
+//     });
+// }
 
 
 // const displayGithubLinks = (gitLinksArr) => {
@@ -76,6 +100,3 @@ langButton.addEventListener('click', displayText)
 devButton.addEventListener('click', displayText)
 infoButton.addEventListener('click', displayText)
 projectButton.addEventListener('click', displayProjects)
-// for (let i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', displayText);
-// }
