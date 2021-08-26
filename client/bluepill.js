@@ -11,7 +11,7 @@ const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
-        axios.get(baseURL+'/katie/languages')
+        axios.get('/katie/languages')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
@@ -20,7 +20,7 @@ const displayText = (event) => {
             })
             .catch(err => console.log(err))
     } else if (id === 'devButton') {
-        axios.get(baseURL+'/katie/devops')
+        axios.get('/katie/devops')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
@@ -29,7 +29,7 @@ const displayText = (event) => {
             })
             .catch(err => console.log(err))
     } else if(id === 'infoButton') {
-        axios.get(baseURL+'/katie/more')
+        axios.get('/katie/more')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
