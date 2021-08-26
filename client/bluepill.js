@@ -4,7 +4,6 @@ const devButton = document.getElementById('devButton')
 const infoButton = document.getElementById('infoButton')
 const projectButton = document.getElementById('projectButton')
 const displayContainer = document.getElementById('displayContainer')
-const baseURL = ""
 
 
 const displayText = (event) => {
@@ -16,23 +15,15 @@ const displayText = (event) => {
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if (id === 'devButton') {
-        axios.get('/katie/devops')
-            .then(res => {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = res.data
+                newPara.innerHTML = devArr = "DevOps Tools:\tGit | Github | Postman | Figma | CircleCI | Rollbar"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
-            })
-            .catch(err => console.log(err))
     } else if(id === 'infoButton') {
-        axios.get('/katie/more')
-            .then(res => {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = res.data
+                newPara.innerHTML = moreArr = "Development Skills:\tAgile Software Development | RESTful API | Effecient Algorithms"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)  
-            })
-            .catch(err => console.log(err))
     } else {
         alert("Something went wrong")
     }
