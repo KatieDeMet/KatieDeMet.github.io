@@ -9,9 +9,7 @@ app.use(express.json());
 app.use(express.static('client'))
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/index.html'))
-})
+app.get('/', cntl.mainFile)
 
 app.get('/katie/languages', cntl.getLanguages)
 app.get('/katie/devops', cntl.getDevs)

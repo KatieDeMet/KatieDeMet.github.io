@@ -48,7 +48,7 @@ const displayProjects = () => {
     displayHeaders(["I'm A Meme", "Budget Builder"])
     displayImages(["client/assets/imamemeDemoPhoto.jpg", "client/assets/budgetBuilderDemoPhoto.jpg"])
     displayGithubLinks(["https://github.com/KatieDeMet/imameme", "https://github.com/KatieDeMet/simulation-vanillajs"])
-    displayLiveLinks(["https://imameme.herokuapp.com/"])
+    displayLiveLinks(["https://imameme.herokuapp.com/", "https://budgetbuilderkatie.herokuapp.com/"])
 
     
     
