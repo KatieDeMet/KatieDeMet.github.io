@@ -43,6 +43,8 @@ const displayProjects = () => {
 
     let projectImgDiv = document.createElement('div')
     projectImgDiv.classList.add('projectImgDiv')
+    projectDiv1.appendChild(projectImgDiv)
+    
     let projectImg1 = document.createElement('img')
     projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
     projectImgDiv.appendChild('projectImg1')
@@ -62,7 +64,6 @@ const displayProjects = () => {
     projectImgDiv.appendChild(githubLink1)
     projectImgDiv.appendChild(demoLink1)
     projectImgDiv.appendChild(liveLink1)
-    projectDiv1.appendChild(projectImgDiv)
     
     // displayHeaders([, "Budget Builder"])
     // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
