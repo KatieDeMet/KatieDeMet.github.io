@@ -32,11 +32,11 @@ const displayText = (event) => {
 const displayProjects = () => {
     displayContainer.innerHTML = ``
 
+    //Project 1
     let projectDiv1 = document.createElement('div')
     projectDiv1.classList.add('projectDiv')
 
     let title1 = document.createElement('h3')
-    // title1.classList.add('projectTitle')
     title1.innerHTML = "I'm A Meme"
     title1.setAttribute("class", "projectTitle")
     projectDiv1.appendChild(title1)
@@ -65,13 +65,44 @@ const displayProjects = () => {
     projectLinkDiv1.appendChild(demoLink1)
     projectLinkDiv1.appendChild(liveLink1)
     projectImgDiv1.appendChild(projectLinkDiv1)
+
+    //Project2
+    let projectDiv2 = document.createElement('div')
+    projectDiv2.classList.add('projectDiv')
+
+    let title2 = document.createElement('h3')
+    title2.innerHTML = "Budget Builder"
+    title1.setAttribute("class", "projectTitle")
+    projectDiv2.appendChild(title2)
+
+    let projectImgDiv2 = document.createElement('div')
+    projectImgDiv2.classList.add('projectImgDiv')
+    projectDiv2.appendChild(projectImgDiv2)
+
+    let projectImg2 = document.createElement('img')
+    projectImg2.src = "client/assets/budgetBuilderDemoPhoto.jpg"
+    projectImg1.width = 300
+    projectImgDiv2.appendChild(projectImg2)
+
+    let projectLinkDiv2 = document.createElement('div')
+    let githubLink2 = document.createElement('a')
+    githubLink2.href = "https://github.com/KatieDeMet/simulation-vanillajs"
+    githubLink2.innerHTML = "Github"
+    // let demoLink2 = document.createElement('a')
+    // demoLink2.href = "#"
+    // demoLink2.innerHTML = "Demo"
+    let liveLink2 = document.createElement('a')
+    liveLink2.href = "https://budgetbuilderkatie.herokuapp.com/"
+    liveLink2.innerHTML = "Live Site"
+
+    projectLinkDiv2.appendChild(githubLink2)
+    projectLinkDiv2.appendChild(demoLink2)
+    projectLinkDiv2.appendChild(liveLink2)
+    projectImgDiv2.appendChild(projectLinkDiv2)
     
-    // displayHeaders([, "Budget Builder"])
-    // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
-    // displayGithubLinks([, "https://github.com/KatieDeMet/simulation-vanillajs"])
-    // displayLiveLinks([, "https://budgetbuilderkatie.herokuapp.com/"])
 
     displayContainer.appendChild(projectDiv1)
+    displayContainer.appendChild(projectDiv2)
     
 }
 
