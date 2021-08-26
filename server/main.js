@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const path = require('path')
+// const path = require('path')
 const cntl = require('./controller')
 const app = express()
 const port =  process.env.PORT || 7272
@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(express.static('client'))
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "../index.html"))
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../index.html'))
+// })
 
 app.get('/katie/languages', cntl.getLanguages)
 app.get('/katie/devops', cntl.getDevs)
