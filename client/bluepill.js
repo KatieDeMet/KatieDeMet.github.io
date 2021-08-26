@@ -41,16 +41,14 @@ const displayProjects = () => {
     title1.innerHTML = "I'm A Meme"
     projectDiv1.appendChild(title1)
 
-    let projectImgDiv = document.createElement('div')
-    projectImgDiv.classList.add('projectImgDiv')
-    projectDiv1.appendChild(projectImgDiv)
-    
+    // let projectImgDiv = document.createElement('div')
+    // projectImgDiv.classList.add('projectImgDiv')
+    // projectDiv1.appendChild(projectImgDiv)
+
     let projectImg1 = document.createElement('img')
     projectImg1.src = "client/assets/imamemeDemoPhoto.jpg"
-    projectImgDiv.appendChild('projectImg1')
+    projectDiv1.appendChild('projectImg1')
 
-    let projectLinksDiv = document.createElement('div')
-    projectLinksDiv.classList.add('projectLinksDiv')
     let githubLink1 = document.createElement('a')
     githubLink1.href = "https://github.com/KatieDeMet/imameme"
     githubLink1.innerHTML = "Github"
@@ -61,9 +59,9 @@ const displayProjects = () => {
     liveLink1.href = "https://imameme.herokuapp.com/"
     liveLink1.innerHTML = "Live Site"
 
-    projectImgDiv.appendChild(githubLink1)
-    projectImgDiv.appendChild(demoLink1)
-    projectImgDiv.appendChild(liveLink1)
+    projectDiv1.appendChild(githubLink1)
+    projectDiv1.appendChild(demoLink1)
+    projectDiv1.appendChild(liveLink1)
     
     // displayHeaders([, "Budget Builder"])
     // displayImages([, "client/assets/budgetBuilderDemoPhoto.jpg"])
