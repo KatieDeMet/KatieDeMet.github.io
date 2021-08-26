@@ -4,24 +4,24 @@ const devButton = document.getElementById('devButton')
 const infoButton = document.getElementById('infoButton')
 const projectButton = document.getElementById('projectButton')
 const displayContainer = document.getElementById('displayContainer')
-
+let tab = "\t"
 
 const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = "Languages:\tHTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
+                newPara.innerHTML = "Languages:  HTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if (id === 'devButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = devArr = "DevOps Tools:\tGit | Github | Postman | Figma | CircleCI | Rollbar"
+                newPara.innerHTML = devArr = "DevOps Tools:  Git | Github | Postman | Figma | CircleCI | Rollbar"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if(id === 'infoButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = moreArr = "Development Skills:\tAgile Software Development | RESTful API | Effecient Algorithms"
+                newPara.innerHTML = moreArr = "Development Skills:  Agile Software Development | RESTful API | Effecient Algorithms"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)  
     } else {
