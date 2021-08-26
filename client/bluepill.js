@@ -1,5 +1,3 @@
-const axios = require('axios')
-
 const buttons = document.querySelectorAll('.myButton')
 const langButton = document.getElementById('langButton')
 const devButton = document.getElementById('devButton')
@@ -13,14 +11,10 @@ const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
-        axios.get('https://katiedemet.github.io/katie/languages')
-            .then(res => {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = res.data
+                newPara.innerHTML = "Languages:\tHTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
-            })
-            .catch(err => console.log(err))
     } else if (id === 'devButton') {
         axios.get('/katie/devops')
             .then(res => {
