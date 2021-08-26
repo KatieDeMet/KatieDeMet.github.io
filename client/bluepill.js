@@ -96,7 +96,7 @@ const displayProjects = () => {
     liveLink2.innerHTML = "Live Site"
 
     projectLinkDiv2.appendChild(githubLink2)
-    projectLinkDiv2.appendChild(demoLink2)
+    // projectLinkDiv2.appendChild(demoLink2)
     projectLinkDiv2.appendChild(liveLink2)
     projectImgDiv2.appendChild(projectLinkDiv2)
     
