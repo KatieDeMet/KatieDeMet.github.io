@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 const buttons = document.querySelectorAll('.myButton')
 const langButton = document.getElementById('langButton')
 const devButton = document.getElementById('devButton')
