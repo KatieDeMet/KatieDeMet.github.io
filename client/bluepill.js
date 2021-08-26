@@ -11,7 +11,7 @@ const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
-        axios.get('/katie/languages')
+        axios.get(__dirname+'/katie/languages')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
@@ -45,10 +45,10 @@ const displayText = (event) => {
 const displayProjects = () => {
     displayContainer.innerHTML = ``
     
-    displayHeaders(["I'm A Meme", "Budget Builder"])
+    // displayHeaders(["I'm A Meme", "Budget Builder"])
     displayImages(["client/assets/imamemeDemoPhoto.jpg", "client/assets/budgetBuilderDemoPhoto.jpg"])
-    displayGithubLinks(["https://github.com/KatieDeMet/imameme", "https://github.com/KatieDeMet/simulation-vanillajs"])
-    displayLiveLinks(["https://imameme.herokuapp.com/", "https://budgetbuilderkatie.herokuapp.com/"])
+    // displayGithubLinks(["https://github.com/KatieDeMet/imameme", "https://github.com/KatieDeMet/simulation-vanillajs"])
+    // displayLiveLinks(["https://imameme.herokuapp.com/", "https://budgetbuilderkatie.herokuapp.com/"])
 
     
     
@@ -77,13 +77,13 @@ const displayImages = (imgArr) => {
 }
 
 
-const displayGithubLinks = (gitLinksArr) => {
+// const displayGithubLinks = (gitLinksArr) => {
 
-}
+// }
 
-const displayLiveLinks = (liveLinksArr) => {
+// const displayLiveLinks = (liveLinksArr) => {
 
-}
+// }
 
 langButton.addEventListener('click', displayText)
 devButton.addEventListener('click', displayText)
