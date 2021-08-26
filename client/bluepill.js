@@ -11,7 +11,7 @@ const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
-        axios.get(__dirname+'/katie/languages')
+        axios.get('/katie/languages')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
