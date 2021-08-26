@@ -76,7 +76,7 @@ main {
 }
 
 #buttonContainer {
-    width: 15vw;
+    width: 20vw;
     height: 90vh;
     background-color: #BADFF9;
     display: flex;
@@ -99,4 +99,12 @@ main {
 
 a {
     margin: 10px;
+}
+
+.projectDisplayContainer {
+    width: 85vw;
+}
+
+.projectHeader {
+    color: #0096FF;
 }
