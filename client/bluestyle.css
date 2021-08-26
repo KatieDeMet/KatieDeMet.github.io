@@ -101,9 +101,12 @@ a {
     margin: 10px;
 }
 
-/* .projectTitle {
+.projectTitle {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 14px;
     color: #0096FF;
-} */
+    padding: 5px;
+}
 
 .projectDiv {
     width: 40vw;

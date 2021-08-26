@@ -36,9 +36,9 @@ const displayProjects = () => {
     projectDiv1.classList.add('projectDiv')
 
     let title1 = document.createElement('h3')
-    title1.classList.add('projectTitle')
+    // title1.classList.add('projectTitle')
     title1.innerHTML = "I'm A Meme"
-    title1.setAttribute("color", "#0096FF")
+    title1.setAttribute("class", "projectTitle")
     projectDiv1.appendChild(title1)
 
     let projectImgDiv1 = document.createElement('div')
