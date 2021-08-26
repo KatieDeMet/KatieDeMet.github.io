@@ -54,12 +54,15 @@ const displayProjects = () => {
     let githubLink1 = document.createElement('a')
     githubLink1.href = "https://github.com/KatieDeMet/imameme"
     githubLink1.innerHTML = "Github"
+    githubLink1.setAttribute("target", "_blank")
     let demoLink1 = document.createElement('a')
     demoLink1.href = "https://youtu.be/UPFSfziItqk "
     demoLink1.innerHTML = "Demo"
+    demoLink1.classList.add('projectLink')
     let liveLink1 = document.createElement('a')
     liveLink1.href = "https://imameme.herokuapp.com/"
     liveLink1.innerHTML = "Live Site"
+    liveLink1.classList.add('projectLink')
 
     projectLinkDiv1.appendChild(githubLink1)
     projectLinkDiv1.appendChild(demoLink1)
@@ -88,13 +91,14 @@ const displayProjects = () => {
     let githubLink2 = document.createElement('a')
     githubLink2.href = "https://github.com/KatieDeMet/simulation-vanillajs"
     githubLink2.innerHTML = "Github"
+    githubLink2.classList.add('projectLink')
     // let demoLink2 = document.createElement('a')
     // demoLink2.href = "#"
     // demoLink2.innerHTML = "Demo"
     let liveLink2 = document.createElement('a')
     liveLink2.href = "https://budgetbuilderkatie.herokuapp.com/"
     liveLink2.innerHTML = "Live Site"
-
+    liveLink2.classList.add('projectLink')
     projectLinkDiv2.appendChild(githubLink2)
     // projectLinkDiv2.appendChild(demoLink2)
     projectLinkDiv2.appendChild(liveLink2)
