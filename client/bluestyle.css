@@ -96,6 +96,7 @@ main {
     width: 150px;
     border-radius: 5px;
     font-family: 'Chakra Petch';
+    cursor: pointer;
 }
 
 a {
