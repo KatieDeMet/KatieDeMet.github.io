@@ -112,3 +112,9 @@ a {
 .projectDiv {
     width: 40vw;
 }
+
+#hiddenDiv {
+    width: 4em;
+    height: 10vh;
+    cursor: pointer;
+}

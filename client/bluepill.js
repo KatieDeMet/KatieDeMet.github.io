@@ -11,7 +11,7 @@ const displayText = (event) => {
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = "Languages:  HTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
+                newPara.innerHTML = "Languages:\tHTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if (id === 'devButton') {
@@ -114,3 +114,12 @@ langButton.addEventListener('click', displayText)
 devButton.addEventListener('click', displayText)
 infoButton.addEventListener('click', displayText)
 projectButton.addEventListener('click', displayProjects)
+
+
+const redPill = document.getElementById('hiddenDiv')
+
+const takeRedPill = () => {
+    window.location="redpill.html"
+}
+
+redPill.addEventListener('click', takeRedPill)

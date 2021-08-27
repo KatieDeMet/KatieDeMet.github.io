@@ -1,3 +1,192 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html { 
+    background: url("assets/redGalaxy.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#homeButton {
+    width: 130px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: #FE1B26;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+
 h1 {
+    color: white;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+#shipContainer {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 10px;
+}
+
+#shipContainer img {
+    width: 20%;
+    margin-left: 10vw;
+}
+
+#shipContainer img:hover ~ .hidden {
+    visibility: visible;
+}
+
+.hidden {
+    background-color: #000;
+    color: #fff;
+    visibility: hidden;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shipText {
+    width: 30%;
+    height: 20vh;
+    margin-left: 20px;
+}
+
+#planetContainer {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row-reverse;
+}
+
+#planetText {
+    padding: 5px;
+    width: 30%;
+    height: 25vh;
+    margin-right: 20px;
+}
+#planetContainer img {
+    width: fit-content;
+    height: auto;
+    margin-right: 20vw;
+}
+
+#planetContainer img:hover ~ #planetText {
+    visibility: visible;
+}
+
+#satelliteContainer {
+    margin: 10px 0;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row-reverse;
+}
+
+#satelliteContainer img {
+    width: fit-content;
+    height: auto;
+    margin-right: 50px;
+}
+
+#satelliteContainer img:hover ~ #satelliteText {
+    visibility: visible;
+}
+
+#alienContainer {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+}
+
+.alienDiv {
+    height: 10vh;
+    width: 30vw;
+}
+
+.alienDiv img {
+    width: 30%;
+    height: auto;
+}  
+
+.visible {
+    background-color: #000;
+    color: #fff;
+    visibility: visible;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a:visited {
     color: red;
+}
+
+.titleMessge {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactContainer {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: width 1s;
+    transition: height 1s;
+}
+
+#contactContainer:hover {
+    width: 120px;
+    height: 120px;
+}
+
+#contactContainer:hover > .contactLink {
+    display: block;
+}
+
+.contactLink {
+    display: none;
+    color: #fff;
+}
+
+.contactLink:visited {
+    color: #000;
+}
+
+#bluePill {
+    width: 30px;
+    height: 10px;
+    border-radius: 30px;
+}
+
+#contactContainer button {
+    background-color: blue;
+    border: 1px solid #fff;
+    cursor: pointer;
 }

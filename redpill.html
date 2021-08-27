@@ -4,11 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Pill</title>
-    <link rel="stylesheet" href="redpill.html">
+    <title>Katie DeMet's Red Pill Profile</title>
+    <link rel="stylesheet" href="client/reset.css">
+    <link rel="stylesheet" href="client/redstyle.css">
 </head>
 <body>
-    <p><a href="index.html">Home</a></p>
-<h1>Red Pill</h1>
+    <header>
+        <form action="index.html">
+            <input type="submit" value="Return to the Matrix" id="homeButton">
+        </form>
+        <h1>The Earth is under attack from alien invaders. Hurry! Jump in the spaceship to evacuate!</h1>
+    </header>
+    <section id="shipContainer">
+        <img src="client/assets/red-spaceship-vector-clipart.png">
+        <div class="hidden" id="shipText">
+            <p>Hello, there! I'm your pilot, Katie DeMet.</p>
+            <p>Welcome aboard the SS Full Stack Web Dev spaceship.</p>
+            <p>Buckle up folks,</p>
+            <p>we're headed to a base on the red planet Mars to refuel.</p>
+        </div>
+    </section>
+    <section id="planetContainer">
+        <img src="client/assets/redPlanet.png">
+        <div class="hidden" id="planetText">
+            <p>Good news! I was able to find plenty of supplies here.</p>
+            <p>Our ship is now fully loaded with:</p>
+            <p>HTML, CSS3, JavaScript, JSON, NodeJS, and PostgreSQL</p>
+            <p>That should keep us running at full capacity for a little while.</p>
+            <p>Let's make a pit stop at the Martian satellite on our way out for some ammo.</p>
+        </div>
+    </section>
+    <section id="satelliteContainer">
+        <div id="contactContainer">
+           <a href="https://github.com/KatieDeMet" target="_blank" class="contactLink">LinkedIn</a>
+           <a href="https://www.linkedin.com/in/katie-demet-442b5b20b/" target="_blank" class="contactLink">Github</a>
+           <a href="mailto:katie.demet7@gmail.com?subject=Re: Profile Page" target="_blank" class="contactLink">Email Me</a>
+           <p class="contactLink">Take blue pill:</p>
+           <button class="contactLink" id="bluePill"></button>
+        </div>
+        <img src="client/assets/Space_Station.png">
+        <div class="hidden" id="satelliteText">
+            <p>I found the following tools in the weapons arsenal:</p>
+            <p>Git, Github, Postman, Figma, Trello, CircleCI, Rollbar, and more.</p>
+            <p>My unit also specializes in Agile Software Development, RESTful API's,  and Low Time Complexity Alogrithms.</p>
+            <p>We should be ready now to defend humanity. On to the alien ships!</p>
+        </div>
+    </section>
+    <section id="alienContainer">
+        <div class="alienDiv">
+            <img src="client/assets/redShip2.png" id="alienShip1">
+            <div class="hidden" id="projectText1">
+                    <p>Project Name: I'm A Meme</p>
+                    <p><a href="https://github.com/KatieDeMet/imameme" target="_blank">Github</a></p>
+                    <p><a href="https://youtu.be/UPFSfziItqk " target="_blank">Demo</a></p>
+                    <p><a href="https://imameme.herokuapp.com/" target="_blank">Live Site</a></p>
+                    <p>Mission Accomplished - Return to Earth</p>
+            </div>
+        </div>
+        <div class="alienDiv">
+            <img src="client/assets/redShip2.png" id="alienShip2">
+            <div class="hidden" id="projectText2">
+                <p>Project Name: Budget Builder</p>
+                <p><a href="https://github.com/KatieDeMet/simulation-vanillajs" target="_blank">Github</a></p>
+                <p><a href="https://budgetbuilderkatie.herokuapp.com/" target="_blank">Live Site</a></p>
+                <p>Mission Accomplished - Return to Earth</p>
+            </div>
+        </div>
+    </section>
+    <script src="client/redpill.js"></script>
 </body>
 </html>
