@@ -113,6 +113,11 @@ a {
     width: 40vw;
 }
 
+.projectDiv img {
+    width: 50%;
+    height: auto;
+}
+
 #hiddenDiv {
     width: 4em;
     height: 10vh;
@@ -144,13 +149,12 @@ a {
         height: auto;
         order: 2;
         align-items: flex-start;
-        margin-bottom: 20px;
         padding-right: 20px;
     }
     #buttonContainer {
         width: 100vw;
         height: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         order: 1;
         align-items: flex-start;
     }
