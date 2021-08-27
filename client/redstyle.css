@@ -68,6 +68,7 @@ h1 {
     width: 30%;
     height: 20vh;
     margin-left: 20px;
+    font-size: small;
 }
 
 #planetContainer {
@@ -83,6 +84,7 @@ h1 {
     width: 30%;
     height: 25vh;
     margin-right: 20px;
+    font-size: small;
 }
 #planetContainer img {
     width: fit-content;
@@ -113,6 +115,10 @@ h1 {
     visibility: visible;
 }
 
+#satelliteText {
+    font-size: small;
+}
+
 #alienContainer {
     height: 20vh;
     width: 100vw;
@@ -123,6 +129,7 @@ h1 {
 .alienDiv {
     height: 10vh;
     width: 30vw;
+    font-size: small;
 }
 
 .alienDiv img {
@@ -142,6 +149,10 @@ h1 {
     justify-content: space-between;
 }
 
+.alienDiv a {
+    color: #fff;
+}
+
 a:visited {
     color: red;
 }
@@ -155,6 +166,7 @@ a:visited {
     border-radius: 50px;
     width: 200px;
     height: 100px;
+    font-size: small;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
