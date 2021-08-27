@@ -64,7 +64,7 @@ main {
     height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding: 20px;
 }
 
 .buttonPara {
@@ -121,13 +121,20 @@ a {
 
 @media only screen and (max-width: 800px) {
     main {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
     #imgContainer {
         width: 100vw;
-        height: auto;
+        height: 40vh;
         margin-bottom: 20px;
         align-items: center;
+        justify-content: center;
+    }
+    #imgContainer img {
+        width: fit-content;
+        height: auto;
     }
     #displayContainer {
         flex-direction: column;
@@ -135,10 +142,16 @@ a {
         height: auto;
         order: 2;
         align-items: center;
+        margin-bottom: 20px;
+        padding: 0;
     }
     #buttonContainer {
         width: 100vw;
         height: auto;
+        margin-top: 50px;
         order: 1;
     }
+    h1 {
+        font-size: medium;
+    }   
 }
