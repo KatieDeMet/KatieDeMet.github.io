@@ -143,7 +143,7 @@ a {
         order: 2;
         align-items: center;
         margin-bottom: 20px;
-        padding: 0;
+        padding-right: 20px;
     }
     #buttonContainer {
         width: 100vw;
