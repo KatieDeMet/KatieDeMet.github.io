@@ -1,7 +1,7 @@
 const alienShip1 = document.getElementById('alienShip1')
 const alienShip2 = document.getElementById('alienShip2')
 const bluePill = document.getElementById('bluePill')
-const earth = document.getElementById('earth')
+const earth = document.getElementById('whiteRabbit')
 const container = document.getElementById('contactContainer')
 
 const makeVisible = (event) => {
