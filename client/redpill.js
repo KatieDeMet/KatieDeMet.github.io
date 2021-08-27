@@ -22,12 +22,9 @@ const makeVisible = (event) => {
     }
 }
 
-const hideEarth = () => {
-    earth.classList.toggle('hideEarth') 
-}
-
-const showEarth = () => {
-    earth.classList.toggle('showEarth') 
+const toggleEarth = () => {
+    earth.classList.toggle('hideEarth')
+    earth.classList.toggle('showEarth')  
 }
 
 const takeBluePill = () => {
@@ -37,6 +34,5 @@ const takeBluePill = () => {
 alienShip1.addEventListener('click', makeVisible)
 alienShip2.addEventListener('click', makeVisible)
 bluePill.addEventListener('click', takeBluePill)
-container.addEventListener('mouseover', hideEarth)
-container.addEventListener('mouseout', showEarth)
-earth.addEventListener('mouseover', hideEarth)
+container.addEventListener('mouseenter', toggleEarth)
+container.addEventListener('mouseleave', toggleEarth)

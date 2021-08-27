@@ -1,1 +1,1 @@
->>> Follow the white rabbit
+> Follow the white rabbit

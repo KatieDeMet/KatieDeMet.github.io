@@ -206,6 +206,6 @@ a:visited {
 }
 
 .showEarth {
-    display: contents;
+    display: block;
     visibility: visible;
 }

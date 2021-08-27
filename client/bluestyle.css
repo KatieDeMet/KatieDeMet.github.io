@@ -118,3 +118,27 @@ a {
     height: 10vh;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    #imgContainer {
+        width: 100vw;
+        height: auto;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    #displayContainer {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        order: 2;
+        align-items: center;
+    }
+    #buttonContainer {
+        width: 100vw;
+        height: auto;
+        order: 1;
+    }
+}
