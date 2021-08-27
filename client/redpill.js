@@ -1,6 +1,8 @@
 const alienShip1 = document.getElementById('alienShip1')
 const alienShip2 = document.getElementById('alienShip2')
 const bluePill = document.getElementById('bluePill')
+const earth = document.getElementById('earth')
+const container = document.getElementById('contactContainer')
 
 const makeVisible = (event) => {
     if (event.target.id === 'alienShip1') {
@@ -20,6 +22,14 @@ const makeVisible = (event) => {
     }
 }
 
+const hideEarth = () => {
+    earth.classList.toggle('hideEarth') 
+}
+
+const showEarth = () => {
+    earth.classList.toggle('showEarth') 
+}
+
 const takeBluePill = () => {
     window.location="bluepill.html"  
 }
@@ -27,3 +37,6 @@ const takeBluePill = () => {
 alienShip1.addEventListener('click', makeVisible)
 alienShip2.addEventListener('click', makeVisible)
 bluePill.addEventListener('click', takeBluePill)
+container.addEventListener('mouseover', hideEarth)
+container.addEventListener('mouseout', showEarth)
+earth.addEventListener('mouseover', hideEarth)
