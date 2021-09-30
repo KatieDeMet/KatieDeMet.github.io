@@ -87,7 +87,7 @@ h1 {
     font-size: small;
 }
 #planetContainer img {
-    width: fit-content;
+    width: 10%;
     height: auto;
     margin-right: 20vw;
 }
@@ -106,7 +106,7 @@ h1 {
 }
 
 #satelliteContainer img {
-    width: fit-content;
+    width: 10%;
     height: auto;
     margin-right: 17vw;
 }
