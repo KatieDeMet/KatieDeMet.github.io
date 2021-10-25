@@ -11,12 +11,12 @@ const displayText = (event) => {
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = "Languages:\tHTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
+                newPara.innerHTML = "Languages: HTML5 | CSS | Javascript | JSON | NodeJS | Express | PostgreSQL"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if (id === 'devButton') {
                 let newPara = document.createElement('p')
-                newPara.innerHTML = devArr = "DevOps Tools:  Git | Github | Postman | Figma | CircleCI | Rollbar"
+                newPara.innerHTML = devArr = "DevOps Tools:  Git | Github | Postman | Figma | Trello | CircleCI"
                 newPara.classList.add("buttonPara")
                 displayContainer.appendChild(newPara)
     } else if(id === 'infoButton') {
@@ -83,24 +83,24 @@ const displayProjects = () => {
     projectDiv2.appendChild(projectImgDiv2)
 
     let projectImg2 = document.createElement('img')
-    projectImg2.src = "client/assets/budgetBuilderDemoPhoto.jpg"
+    projectImg2.src = "client/assets/gitrdunDemoPhoto.jpg"
     projectImg2.width = 300
     projectImgDiv2.appendChild(projectImg2)
 
     let projectLinkDiv2 = document.createElement('div')
     let githubLink2 = document.createElement('a')
-    githubLink2.href = "https://github.com/KatieDeMet/simulation-vanillajs"
+    githubLink2.href = "https://github.com/KatieDeMet/git-r-dun"
     githubLink2.innerHTML = "Github"
     githubLink2.setAttribute("target", "_blank")
-    // let demoLink2 = document.createElement('a')
-    // demoLink2.href = "#"
-    // demoLink2.innerHTML = "Demo"
+    let demoLink2 = document.createElement('a')
+    demoLink2.href = "https://youtu.be/g1AeQ1zDZY0"
+    demoLink2.innerHTML = "Demo"
     let liveLink2 = document.createElement('a')
-    liveLink2.href = "https://budgetbuilderkatie.herokuapp.com/"
+    liveLink2.href = "https://git-r-dun.herokuapp.com/"
     liveLink2.innerHTML = "Live Site"
     liveLink2.setAttribute("target", "_blank")
     projectLinkDiv2.appendChild(githubLink2)
-    // projectLinkDiv2.appendChild(demoLink2)
+    projectLinkDiv2.appendChild(demoLink2)
     projectLinkDiv2.appendChild(liveLink2)
     projectImgDiv2.appendChild(projectLinkDiv2)
     
