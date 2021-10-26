@@ -74,7 +74,7 @@ const displayProjects = () => {
     projectDiv2.classList.add('projectDiv')
 
     let title2 = document.createElement('h3')
-    title2.innerHTML = "Budget Builder"
+    title2.innerHTML = "Git 'R Dun"
     title2.setAttribute("class", "projectTitle")
     projectDiv2.appendChild(title2)
 
